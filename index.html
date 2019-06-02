@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="grid.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>CSS GRID TEST</title>
+  </head>
+
+  <body>
+    <a href="#header"
+      ><div id="up-button">
+        <i class="arrow top" id="topArrow"></i></div
+    ></a>
+
+    <div id="sn-nav">
+      <div id="inst-nv">Instagram</div>
+      <div id="face-nv">Facebook</div>
+      <div id="email-nv">Email</div>
+    </div>
+    <div id="grid">
+      <header id="header">
+        <span id="brand">
+          <span id="logo">
+            <p>Walker</p>
+          </span>
+          <p id="sub-logo">barbershop</p>
+        </span>
+
+        <button id="nav-open">Open Nav</button>
+      </header>
+      <nav id="nav">
+        <ul>
+          <li>
+            <a href="#hero">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#sign-up">Price list</a>
+          </li>
+          <li>
+            <a href="#gallery">Gallery</a>
+          </li>
+          <li>
+            <a href="#article">Barbers</a>
+          </li>
+          <li>
+            <a href="#" class="not-avanible-btn">Products</a>
+          </li>
+          <li>
+            <a href="#about">Schedule</a>
+          </li>
+          <li>
+            <a href="#footer">Contact</a>
+          </li>
+        </ul>
+        <button id="nav-close">Close Nav</button>
+      </nav>
+
+      <section id="hero">
+        <h1>
+          <span class="blue">Welcome to</span> Walker
+          <span class="red">barbershop</span>
+        </h1>
+      </section>
+
+      <div id="main-border">
+        <main id="main">
+          <div class="gps">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d438.64061185870065!2d-16.547805508326224!3d28.415488029596112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a7f92b42e94f7%3A0x13cd26a8cba62fa!2sWalker+BarberShop!5e0!3m2!1ses!2suk!4v1559499245095!5m2!1ses!2suk"
+              width="519"
+              height="390"
+              frameborder="0"
+              style="border:0"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="shadow-background" id="about">
+            <h2>About Us</h2>
+            <div class="paragraph">
+              Do you need a beard trim? Or maybe you forget to cut your hear
+              before going for holidays, you are in the right place! Walker
+              Barbershop has the best hair professionals in the town, We have
+              been in cutting hear for more than 40 years, I won't speak more,
+              just go and check it yourself!
+            </div>
+
+            <h3>Schedule</h3>
+            <div class="paragraph">
+              <ul>
+                <li>
+                  Monday: 9:00 to 20:00;
+                </li>
+                <li>
+                  Tuesday: 9:00 to 20:00;
+                </li>
+                <li>
+                  Wenesday: 9:00 to 20:00;
+                </li>
+                <li>
+                  Thursday: 9:00 to 20:00;
+                </li>
+                <li>
+                  Friday: 9:00 to 20:00;
+                </li>
+                <li>
+                  Saturday: 9:00 to 15:00;
+                </li>
+                <li>
+                  Sunday: Closed;
+                </li>
+              </ul>
+            </div>
+          </div>
+        </main>
+      </div>
+      <article id="article">
+        <h3>Barbers</h3>
+        <i class="arrow left" id="leftArrow"></i>
+        <i class="arrow right" id="rightArrow"></i>
+
+        <div class="barber" id="walter">
+          <h4>Walter</h4>
+          <h6>The Big Boss</h6>
+          <img src="img/barbers/walker.jpg" class="photo-barber" id="photo-walter"></img>
+          <p class="paragraph">
+            Walter is the father of the family, more than 40 years cutting heair
+            behind him.
+          </p>
+        </div>
+        <div class="barber" id="javier">
+          <h4>Javier</h4>
+          <h6>The Last Rapanui</h6>
+          <img src="img/barbers/javi.jpg" class="photo-barber" id="photo-javier"></img>
+          <p class="paragraph">
+            Javi is the Older broder of the family, he is a musician and a
+            painter artist when he is off
+          </p>
+        </div>
+        <div class="barber" id="argentino">
+          <h4>Argentino</h4>
+          <h6>The King of Bistec</h6>
+          <img src="img/barbers/argentino.jpg" class="photo-barber" id="photo-argentino"></img>
+          <p class="paragraph">
+            Old School Barber, he has been cutting since 1978, in the time when
+            the scissors clippers were alien tecnology, he domains all kind of
+            haircuts, the new trends to the clasics cuts.
+          </p>
+        </div>
+      </article>
+      <section id="sign-up">
+        <h3>Price List</h3>
+        <div id="price-list">
+          <ul>
+            <li>
+              Dry cut:
+              <span class="offer">7€</span>
+            </li>
+            <li>
+              Wash and cut:
+              <span class="offer">8€</span>
+            </li>
+            <li>
+              Bold cut:
+              <span class="offer">5€</span>
+            </li>
+            <li>
+              Beard trim:
+              <span class="offer">5€</span>
+            </li>
+            <li>
+              Beard Shave:
+              <span class="offer">10€</span>
+            </li>
+            <li>
+              Beard line up:
+              <span class="offer">10€</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="gallery">
+        <h3>Gallery</h3>
+        <div id="blackScreen" class="">
+          <img id="photoGrande" class="" src="" alt="" />
+        </div>
+        <div class="photo-gallery" id="photo-gallery-0">
+          <img src="img/beard-trim.jpg" alt="beard-trim" />
+        </div>
+        <div class="photo-gallery" id="photo-gallery-1">
+          <img src="img/img1.png" alt="guy-fading" />
+        </div>
+        <div class="photo-gallery" id="photo-gallery-2">
+          <img src="img/img2.jpg" alt="blow-and-dry" />
+        </div>
+        <div class="photo-gallery" id="photo-gallery-3">
+          <img src="img/img3.jpg" alt="beard-man-og" />
+        </div>
+        <div class="photo-gallery" id="photo-gallery-4">
+          <img src="img/product.jpg" alt="produc-for-the-hear" />
+        </div>
+        <div class="photo-gallery" id="photo-gallery-5">
+          <img src="img/skin-fade.jpg" alt="skin-fade" />
+        </div>
+      </section>
+      <footer id="footer">
+        <h3>Contact Us</h3>
+        <div class="row">
+          <div class="column">
+            <h4>by email:</h4>
+            <p>walkerbarbershop@gmail.com</p>
+          </div>
+
+          <div class="column">
+            <h4>Instagram</h4>
+            <a href="instagram.com/@walkerbarbershop">@walkerbarbershop</a>
+          </div>
+
+          <div class="column">
+            <h4>Facebook</h4>
+            <a href="facebook.com/@walkerbarbershop">@walkerbarbershop</a>
+          </div>
+
+          <div class="column">
+            <h4>Web design</h4>
+            <p>By Walterdesigns</p>
+            <a href="walterdesigns.tk">walterdesigns.tk</a>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2018 WalterDesignsThinks. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

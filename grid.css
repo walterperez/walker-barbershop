@@ -1,0 +1,157 @@
+html,
+body {
+  margin: 0%;
+  padding: 0%;
+  background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0 10px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(
+      #1d1d1d 25%,
+      #1a1a1a 25%,
+      #1a1a1a 50%,
+      transparent 50%,
+      transparent 75%,
+      #242424 75%,
+      #242424
+    );
+  background-color: #131313;
+  background-size: 20px 20px;
+}
+#grid {
+  border: 1px solid transparent;
+  max-width: 1100px;
+  margin: 1.25rem auto;
+  background-color: #350629a9;
+}
+
+#gallery {
+  text-align: center;
+}
+
+#gallery img {
+  padding: 16px;
+  max-width: 100%;
+}
+
+@media (max-width: 720px) {
+  #nav {
+    display: none;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    bottom: 0%;
+    right: 50%;
+  }
+}
+
+@media (min-width: 721px) {
+  #nav-open,
+  #nav-close {
+    display: none;
+  }
+}
+
+@media (min-width: 721px) {
+  article,
+  #sign-up,
+  #gallery img {
+    float: left;
+    width: 50%;
+  }
+
+  #gallery,
+  footer {
+    float: left;
+    width: 100%;
+  }
+}
+
+@supports (display: grid) {
+  article,
+  #sign-up,
+  #gallery,
+  #gallery img {
+    float: none;
+    width: 100%;
+  }
+}
+
+@supports (display: grid) {
+  header {
+    grid-area: header;
+  }
+  nav {
+    grid-area: nav;
+  }
+  #hero {
+    grid-area: hero;
+  }
+  #main-border {
+    grid-area: main;
+  }
+  #gallery {
+    grid-area: gallery;
+  }
+  article {
+    grid-area: article;
+  }
+  #sign-up {
+    grid-area: sign-up;
+  }
+  footer {
+    grid-area: footer;
+  }
+}
+
+@supports (display: grid) {
+  @media (min-width: 721px) {
+    #grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+@supports (display: grid) {
+  @media (min-width: 1001px) {
+    #grid {
+      grid-template-areas:
+        "header header header header"
+        "nav nav nav nav"
+        "hero hero hero hero"
+        "main main main main"
+        "gallery gallery gallery gallery"
+        "article article article sign-up"
+        "footer footer footer footer";
+    }
+  }
+}
+
+@supports (display: grid) {
+  @media (min-width: 721px) and (max-width: 1000px) {
+    #grid {
+      grid-template-areas:
+        "header header nav nav"
+        "hero hero hero hero"
+        "sign-up main main article"
+        "gallery gallery gallery gallery"
+        "footer footer footer footer";
+    }
+  }
+}
+
+@supports (display: grid) {
+  @media (min-width: 721px) {
+    #gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 1001px) {
+    #gallery {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
